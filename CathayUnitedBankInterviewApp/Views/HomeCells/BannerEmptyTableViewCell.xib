@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="BannerEmptyTableViewCell" customModule="CathayUnitedBankInterviewApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyl-g3-HcF" userLabel="Background View">
+                        <rect key="frame" x="24" y="5" width="327" height="66"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deT-vP-C2K">
+                                <rect key="frame" x="139.66666666666666" y="31" width="48" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhe-0r-tH9">
+                                        <rect key="frame" x="13.666666666666687" y="3.6666666666666643" width="20.666666666666671" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="8SB-3V-bs3"/>
+                                    <constraint firstItem="dhe-0r-tH9" firstAttribute="centerY" secondItem="deT-vP-C2K" secondAttribute="centerY" id="KLY-hX-2pv"/>
+                                    <constraint firstItem="dhe-0r-tH9" firstAttribute="centerX" secondItem="deT-vP-C2K" secondAttribute="centerX" id="Rei-Tx-t4y"/>
+                                    <constraint firstAttribute="width" constant="48" id="V9g-CC-bol"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c0I-Ut-1rx"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="deT-vP-C2K" firstAttribute="centerX" secondItem="Cyl-g3-HcF" secondAttribute="centerX" id="k8f-Ra-dC6"/>
+                            <constraint firstItem="c0I-Ut-1rx" firstAttribute="bottom" secondItem="deT-vP-C2K" secondAttribute="bottom" constant="11" id="yBw-Ug-yLd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Cyl-g3-HcF" secondAttribute="bottom" id="HKL-Fd-aB9"/>
+                    <constraint firstItem="Cyl-g3-HcF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="XDO-tz-KPZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Cyl-g3-HcF" secondAttribute="trailing" constant="24" id="aYB-We-dlE"/>
+                    <constraint firstItem="Cyl-g3-HcF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tiV-Ld-O5g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="adBackgroundView" destination="Cyl-g3-HcF" id="aVd-2L-tp7"/>
+                <outlet property="adView" destination="deT-vP-C2K" id="uQk-N3-vxT"/>
+            </connections>
+            <point key="canvasLocation" x="27.480916030534349" y="27.464788732394368"/>
+        </tableViewCell>
+    </objects>
+</document>

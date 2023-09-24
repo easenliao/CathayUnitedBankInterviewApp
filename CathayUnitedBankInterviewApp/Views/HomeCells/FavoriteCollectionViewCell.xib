@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FavoriteCollectionViewCell" customModule="CathayUnitedBankInterviewApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button00ElementScrollTree" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-W7-jY4">
+                        <rect key="frame" x="12" y="0.0" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="GEZ-oj-bT0"/>
+                            <constraint firstAttribute="height" constant="56" id="e5D-dg-jPB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjV-75-TZQ" userLabel="Title">
+                        <rect key="frame" x="0.0" y="56" width="80" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="7l9-J8-I5I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bjV-75-TZQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="21k-8h-XQB"/>
+                <constraint firstItem="y5U-W7-jY4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9El-Qi-AHB"/>
+                <constraint firstItem="bjV-75-TZQ" firstAttribute="top" secondItem="y5U-W7-jY4" secondAttribute="bottom" id="Dyb-78-qcu"/>
+                <constraint firstAttribute="trailing" secondItem="bjV-75-TZQ" secondAttribute="trailing" id="FSu-2u-HVs"/>
+                <constraint firstAttribute="bottom" secondItem="bjV-75-TZQ" secondAttribute="bottom" id="fwf-QB-LMC"/>
+            </constraints>
+            <size key="customSize" width="186" height="116"/>
+            <connections>
+                <outlet property="iconImageView" destination="y5U-W7-jY4" id="j0x-F8-bng"/>
+                <outlet property="nicknameLabel" destination="bjV-75-TZQ" id="5FU-GR-sdb"/>
+            </connections>
+            <point key="canvasLocation" x="181.67938931297709" y="42.95774647887324"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="button00ElementScrollTree" width="56" height="56"/>
+    </resources>
+</document>
